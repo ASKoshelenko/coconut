@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BrandBar from '../components/BrandBar';
 import TypeBar from '../components/TypeBar';
+import DeviceList from '../components/DeviceList';
 
 const Shop = () => {
     return (
@@ -12,7 +13,7 @@ const Shop = () => {
                 </Col>
                 <Col md={9}>
                     <BrandBar/>
-                    {/* <DeviceList/> */}
+                    <DeviceList/>
                     {/* <Pages/> */}
                 </Col>
             </Row>

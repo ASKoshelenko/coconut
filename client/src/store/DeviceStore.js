@@ -17,9 +17,9 @@ export default class DeviceStore {
         this._devices = [
             {id: 1, name: 'Samsung', price: 25000, rating: 5, img: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone12pro/iphone12-pro-colors.jpg'},
             {id: 2, name: 'Apple 1', price: 25000, rating: 5, img: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone12pro/iphone12-pro-colors.jpg'},
-            {id: 2, name: 'Apple 2', price: 25000, rating: 5, img: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone12pro/iphone12-pro-colors.jpg'},
-            {id: 2, name: 'Apple 3', price: 25000, rating: 5, img: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone12pro/iphone12-pro-colors.jpg'},
-            {id: 2, name: 'Apple 4', price: 25000, rating: 5, img: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone12pro/iphone12-pro-colors.jpg'},
+            {id: 3, name: 'Apple 2', price: 25000, rating: 5, img: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone12pro/iphone12-pro-colors.jpg'},
+            {id: 4, name: 'Apple 3', price: 25000, rating: 5, img: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone12pro/iphone12-pro-colors.jpg'},
+            {id: 5, name: 'Apple 4', price: 25000, rating: 5, img: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone12pro/iphone12-pro-colors.jpg'},
         ]
         this._selectedType = {}
         this._selectedBrand = {}
