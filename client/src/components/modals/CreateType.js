@@ -41,4 +41,4 @@ const CreateType = ({show, onHide}) => {
     );
 };
 
-export default CreateType
+export default CreateType;

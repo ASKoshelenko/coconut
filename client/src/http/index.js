@@ -5,7 +5,7 @@ const $host = axios.create({
 })
 
 const $authHost = axios.create({
-    bbaseURL: process.env.REACT_APP_API_URL
+    baseURL: process.env.REACT_APP_API_URL
 })
 
 const authInterceptor = config => {
