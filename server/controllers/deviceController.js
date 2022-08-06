@@ -35,8 +35,7 @@ class DeviceController {
         page = page || 1
         limit = limit || 9
         let offset = page * limit - limit
-
-        let devices
+        let devices;
         if (!brandId && !typeId) {
             devices = await Device.findAndCountAll({limit, offset})
         }
@@ -47,19 +46,18 @@ class DeviceController {
             devices = await Device.findAndCountAll({where:{typeId}, limit, offset})
         }
         if (brandId && typeId) {
-            devices = await Device.findAndCountAll({where:{brandId, typeId}, limit, offset})
+            devices = await Device.findAndCountAll({where:{typeId, brandId}, limit, offset})
         }
         return res.json(devices)
     }
 
     async getOne(req, res) {
-        const {id} = req.params 
+        const {id} = req.params
         const device = await Device.findOne(
             {
                 where: {id},
                 include: [{model: DeviceInfo, as: 'info'}]
             },
-
         )
         return res.json(device)
     }
