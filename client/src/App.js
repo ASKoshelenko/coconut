@@ -6,6 +6,8 @@ import {observer} from "mobx-react-lite";
 import {Context} from "./index";
 import {check} from "./http/userAPI";
 import {Spinner} from "react-bootstrap";
+import Footer from './components/Footer';
+
 
 const App = observer(() => {
     const {user} = useContext(Context)
@@ -23,10 +25,13 @@ const App = observer(() => {
     }
 
     return (
-        <BrowserRouter>
-            <NavBar />
-            <AppRouter />
-        </BrowserRouter>
+        <div className="bgstore">
+            <BrowserRouter>
+                <NavBar />
+                <AppRouter />
+                <Footer className={"footer"}/>
+            </BrowserRouter>
+        </div>
     );
 });
 

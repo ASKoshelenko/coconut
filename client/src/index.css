@@ -1,0 +1,91 @@
+body, html {
+  height: 100%;
+}
+.bgstore {
+  background-image: url("./img/cocobg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.92;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background-color: rgba(0, 0, 0, 0.898);
+  opacity: 0.9;
+  color: white;
+  font-style:oblique;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.navbar {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  grid-row: auto;
+  align-items: center;
+  margin-left: 4;
+  color: white;
+  opacity: 0.9;
+}
+
+.typebar {
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 5%;
+  text-align: center; 
+}
+
+.typebar:hover {
+  background-color: white;
+  color: black;
+}
+
+.brandbar {
+  display: flex;
+  background-color: white;
+  color: black;
+  /* opacity: 0.9; */
+  cursor: pointer;
+  text-align: center; 
+}
+
+.brandbar:hover {
+  background-color: white;
+  color: black;
+}
+
+.card {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid;
+  border-radius: 5%;
+  cursor: pointer;
+  text-align: center;
+  font-style: italic; 
+}
+
+.card:hover {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+  color: white;
+  font-weight: bold;
+  font-style: normal;
+  border-color: white;
+  border-radius: 5%;
+}
+
+.pagination {
+  margin-top: 3;
+  display: flex;
+  cursor: pointer;
+  text-align: center; 
+  }

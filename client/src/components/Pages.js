@@ -13,7 +13,7 @@ const Pages = observer(() => {
     }
 
     return (
-        <Pagination className="mt-3">
+        <Pagination className="pagination">
             {pages.map(page =>
                 <Pagination.Item
                     key={page}
