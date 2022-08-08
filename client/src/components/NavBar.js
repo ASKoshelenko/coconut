@@ -35,14 +35,14 @@ const NavBar = observer(() => {
                             className="mr-2"
                             onClick={() => history.push(BASKET_ROUTE)}
                         >
-                            Корзина
+                            Basket
                         </Button>
                         {user.isAdmin ?
                             <Button
                                 variant={"outline-light"}
                                 onClick={() => history.push(ADMIN_ROUTE)}
                             >
-                                Админ панель
+                                Admin
                             </Button>
                             :
                             <div></div>
@@ -52,7 +52,7 @@ const NavBar = observer(() => {
                             onClick={() => logOut(localStorage.removeItem('token'))}
                             className="ml-2"
                         >
-                            Выйти
+                            Logout
                         </Button>
                     </Nav>
                     :

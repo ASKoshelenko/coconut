@@ -29,7 +29,7 @@ const DevicePage = () => {
                         className="d-flex flex-column align-items-center justify-content-around"
                         style={{width: 300, height: 300, fontSize: 32, border: 'white'}}
                     >
-                        <h1>{device.name}</h1>
+                        <h1><b>{device.name}</b></h1>
 
                     </Card>
                 </Col>
@@ -41,19 +41,19 @@ const DevicePage = () => {
                         className="d-flex flex-column align-items-center justify-content-around"
                         style={{width: 300, height: 300, fontSize: 32, border: '5px solid lightgray'}}
                     >
-                        <h3>От: {device.price} гривен</h3>
+                        <h3>Price: {device.price} $</h3>
 
                         {/* Запускаем функцию */}
-                        <Button variant={"outline-dark"} onClick={add} >Добавить в корзину</Button>
+                        <Button variant={"outline-dark"} onClick={add} >Add to basket</Button>
 
                     </Card>
                 </Col>
             </Row><br/>
             <Row className="d-flex flex-column m-3">
-                <h2>Характеристики</h2>
+                <h2><b>Technical characteristics</b></h2>
                 {device.info.map((info, index) =>
-                    <Row key={info.id} style={{border: '2px solid lightgray', background: index % 2 === 0 ? 'lightgray' : 'transparent', padding: 10}}>
-                        {info.title}: {info.description}
+                    <Row key={info.id} style={{border: '2px solid lightgray', background: index % 2 === 0 ? 'seashell' : 'azure', padding: 10}}>
+                        <b>{info.title}:</b><i>{info.description}</i>
                     </Row>
                 )}
             </Row>
