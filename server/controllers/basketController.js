@@ -1,7 +1,6 @@
 const { Device, BasketDevice, Basket } = require("../models/models")
 
 class BasketController {
-    // ------ CRUD корзины ------ //
 
     async addToBasket(req,res,next){
         const user = req.user
