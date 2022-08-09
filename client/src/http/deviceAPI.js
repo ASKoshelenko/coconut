@@ -1,5 +1,4 @@
 import {$authHost, $host} from "./index";
-//import jwt_decode from "jwt-decode";
 
 export const createType = async (type) => {
     const {data} = await $authHost.post('api/type', type)
@@ -37,8 +36,6 @@ export const fetchOneDevice = async (id) => {
     const {data} = await $host.get('api/device/' + id)
     return data
 }
-
-// ------ Добавляю подключение для добавление crud с корзиной ------- //
 
 export const addToBasket = async (deviceId) => {
     const {response} = await $authHost.post('api/basket', deviceId)
