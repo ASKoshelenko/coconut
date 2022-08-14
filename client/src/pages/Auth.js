@@ -72,7 +72,7 @@ const Auth = observer(() => {
                             variant={"outline-success"}
                             onClick={click}
                         >
-                            {isLogin ? 'Войти' : 'Регистрация'}
+                            {isLogin ? 'Login' : 'Registration'}
                         </Button>
                     </Row>
 
